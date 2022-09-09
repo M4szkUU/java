@@ -1,0 +1,44 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_maszk()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<p><b>Rodzaje okienek:</b></p> 
+<p><b>Okienko alert</b> – wyświetlająca okienko dialogowe z informacją i przyciskiem OK, </p>
+<p><b>Okienko prompt</b> – generująca okno,w którym użytkownik może wpisać wartość, zwracaną następnie do programu. </p>
+<p><b>Okienko confirm</b> - służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</p>
+<p><b>Konwersji zmiennych.</b></p>
+<p>Wczytanie zmiennej z użyciem <b>prompt</b>wykonywane jest jako ciąg znaków dlatego konieczna jest konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia.</p>
+<p><u>parseFloat(zmienna)</u> - konwersja zmiennej do typu float</p>
+<p><u>parseInt(zmienna)</u> - konwersja zmiennej do typu int (liczbowego)</p>
+<p><u>toString(zmienna)</u> - konwersja zmiennej do typu łańcuchowego.</p>
+<p><b>Typy zmiennych w Javascript</b></p>
+<p>W JavaScript nie ma możliwości definiowania różnych typów zmiennych tak jak w C++, typy zmiennych są definiowane w trakcie ich przypisywania.
+Podstawowe zmienne liczbowe w JavaScript to:</p>
+
+Number → Typ liczbowy 
+<ul>
+<li>zmienna całkowite 
+<li>zmiennoprzecinkowe
+</ul>
+<p>String → Typ tekstowy</p>
+<p>Boolea → Typ logiczny</p>
+<p>Null → Pusta zawartość</p>
+<p>Undefined → Typ niezidentyfikowany</p>
+<p>Object → Obiekt</p>
+<p><b>Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</b></p>
+1. Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".<br>
+<u>Poprawne nazwy zmiennych</u>: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+<u>Błędne nazwy zmiennych</u>: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.<br>
+2. Wielkość liter ma znaczenie.<br>
+<u>Rekord i rekord</u> to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.<br>
+3. Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.<br>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
