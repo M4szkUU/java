@@ -9,9 +9,14 @@ if (r==true)
 else
 { document.write("Nacisnąłeś Cancel!"); }
 }
+function okno_zamknij_maszk()
+    {
+    window.close()
+    }
 </script>
 </head>
 <body>
 <input type="button" onclick="show_confirm()" value="Pokaż confirm box" />
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
 </body>
 </html>

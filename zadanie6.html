@@ -9,10 +9,14 @@ if (name!=null && name!="")
 document.write("Witaj " + name + "! jak się masz?");
 }
 }
-11
+function okno_zamknij_maszk()
+    {
+    window.close()
+    }
 </script>
 </head>
 <body>
 <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
 </body>
 </html>
