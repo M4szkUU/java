@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>
+Obliczanie Pola i obwodu
+</title>
+<script language="JavaScript">
+function pole(a_mas,b_mas)
+{
+a_mas=parseFloat(a)
+b_mas=parseFloat(b)
+Pole_wynik=a_mas*b_mas;
+document.getElementsByName('Pole')[0].value=Pole_wynik.toFixed(2); /* na dokument */
+alert("V="+V_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
+pokaz1.innerHTML="Pole="+Pole_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
+}
+function obw(a_mas,b_mas)
+{
+p_liczba=parseFloat(r)
+obw_liczba=parseFloat(h)
+19
+Pc_wynik=2*Math.PI*r_liczba*r_liczba+2*Math.PI*r_liczba*h_liczba
+document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+alert("Pc="+Pc_wynik.toFixed(2)+" cm^2");
+pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+"cm^2";
+}
+</script>
+</head>
+<body>
+Obliczanie pola i obwodu prosokątu
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole(this.promien.value,this.wysokosc.value); obw(this.promien.value,this.wysokosc.value);return false">
+Podaj bok a=
+<input size="6" name="">
+Podaj bok b=
+<input size="6" name="wysokosc">
+<br> <br>
+<input TYPE="submit" Value="oblicz" >
+<br> <br>
+Pole=
+<input size="6" name="pole">
+Obwód=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
