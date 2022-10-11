@@ -1,49 +1,54 @@
 <html>
 <head>
 <title>
-Obliczanie Pola i obwodu
+Obliczanie pola i obwou prostokąta
 </title>
 <script language="JavaScript">
-function pole(a_mas,b_mas)
+function P_mas(a_mas,b_mas)
 {
-a_mas=parseFloat(a)
-b_mas=parseFloat(b)
-Pole_wynik=a_mas*b_mas;
-document.getElementsByName('Pole')[0].value=Pole_wynik.toFixed(2); /* na dokument */
-alert("V="+V_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
-pokaz1.innerHTML="Pole="+Pole_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
+a_bok_mas=parseFloat(a_mas)
+b_bok_mas=parseFloat(b_mas)
+P_wynik_mas=a_bok_mas*b_bok_mas
+document.getElementsByName('pole_mas')[0].value=P_wynik_mas.toFixed(2); /* na dokument */
+alert("Pole="+P_wynik_mas.toFixed(2)+" cm^2"); /*do okna Alert */
+pokaz1.innerHTML="Pole="+P_wynik_mas.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
 }
-function obw(a_mas,b_mas)
+function Obw_mas(a_mas,b_mas)
 {
-p_liczba=parseFloat(r)
-obw_liczba=parseFloat(h)
+a_bok_mas=parseFloat(a_mas)
+b_bok_mas=parseFloat(b_mas)
 19
-Pc_wynik=2*Math.PI*r_liczba*r_liczba+2*Math.PI*r_liczba*h_liczba
-document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
-alert("Pc="+Pc_wynik.toFixed(2)+" cm^2");
-pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+"cm^2";
+Obw_wynik_mas=(2*a_bok_mas)+(2*b_bok_mas)
+document.getElementsByName('obwod_mas')[0].value=Obw_wynik_mas.toFixed(2);
+alert("Obw="+Obw_wynik_mas.toFixed(2)+" cm");
+pokaz2.innerHTML="Obw="+Obw_wynik_mas.toFixed(2)+"cm";
 }
+function okno_zamknij_maszk()
+            {
+            window.close()
+            }
 </script>
 </head>
 <body>
-Obliczanie pola i obwodu prosokątu
+Obliczenie pola i obwodu
 <br> <br>
-<form name="formularz" action="..." onsubmit="pole(this.promien.value,this.wysokosc.value); obw(this.promien.value,this.wysokosc.value);return false">
+<form name="formularz" action="..." onsubmit="P_mas(this.a_bok_mas.value,this.b_bok_mas.value); Obw_mas(this.a_bok_mas.value,this.b_bok_mas.value);return false">
 Podaj bok a=
-<input size="6" name="">
+<input size="6" name="a_bok_mas">
 Podaj bok b=
-<input size="6" name="wysokosc">
+<input size="6" name="b_bok_mas">
 <br> <br>
-<input TYPE="submit" Value="oblicz" >
+<input TYPE="submit" Value="oblicz_mas" >
 <br> <br>
 Pole=
-<input size="6" name="pole">
-Obwód=
-<input size="6" name="obw">
+<input size="6" name="pole_mas">
+Obw=
+<input size="6" name="obwod_mas">
 </form>
 <table>
 <tr id="pokaz1"></tr>
 <tr id="pokaz2"></tr>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
 </table>
 </body>
 </html>

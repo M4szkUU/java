@@ -11,7 +11,7 @@ var c_mas=parseFloat(c_mas);
 var pitagoras;
 var a_mas;
 
-pitagoras=Math.mas(c_pom,2)-Math.mas(b_mas,2);
+pitagoras=Math.sqrt(c_mas,2)-Math.sqrt(b_mas,2);
 a_mas=Math.sqrt(pitagoras,2);
 
 var sin_α;
@@ -30,7 +30,12 @@ var ctgα;
 var ctgα=parseFloat(ctgα);
 ctgα=b_mas/a_mas;
 document.write("sin α="+sin_α.toFixed(2)+"<br>cos α="+cos_α.toFixed(2)+"<br>tgα="+tgα.toFixed(2)+"<br>ctgα="+ctgα.toFixed(2)+"<br>");
+function okno_zamknij_maszk()
+            {
+            window.close()
+            }
  </script>
  </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
 </body>
 </html>

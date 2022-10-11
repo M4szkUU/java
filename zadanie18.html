@@ -23,6 +23,10 @@ document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
 alert("Pc="+Pc_wynik.toFixed(2)+" cm^2");
 pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+"cm^2";
 }
+function okno_zamknij_maszk()
+            {
+            window.close()
+            }
 </script>
 </head>
 <body>
@@ -45,5 +49,6 @@ Pc=
 <tr id="pokaz1"></tr>
 <tr id="pokaz2"></tr>
 </table>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
 </body>
 </html>
