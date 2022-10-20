@@ -1,0 +1,21 @@
+<html>
+<body>
+<div style="color:blue;font-size:49px;">
+<script language="JavaScript">
+var x_mas=prompt("podaj stopnie=","");
+var x=parseFloat(x_mas);
+y_mas=x*Math.PI/180;
+document.write("Radiany="+y_mas.toFixed(2)+"<br>");
+var y_mas=prompt("podaj radiany=","");
+var y=parseFloat(y_mas);
+x_mas=180*y/Math.PI;
+document.write("Stopnie="+x_mas.toFixed(2)+"°<br>");
+function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
