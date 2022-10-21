@@ -28,6 +28,7 @@
     {
     window.close()
     }
+	    if(bokb_mas<bokc_mas){
     document.write("Bok a="+boka_mas.toFixed(3)+"cm"+"<br>");
 	document.write("Pole="+p_mas.toFixed(3)+"cm^2"+"<br>");
 	document.write("Wysokość h1="+boka_mas.toFixed(3)+"cm"+"<br>");
@@ -38,7 +39,10 @@
 	document.write("sin_alfa="+s_a_mas.toFixed(3)+"<br>");
 	document.write("cos_alfa="+c_a_mas.toFixed(3)+"<br>");
 	document.write("tg_alfa="+t_a_mas.toFixed(3)+"<br>");
-	document.write("ctg_alfa="+ct_a_mas.toFixed(3)+"<br>");
+	document.write("ctg_alfa="+ct_a_mas.toFixed(3)+"<br>");}
+	    else{
+		    document.write("C musi byc wieksze niz B")+"<br>");
+	    }
     </script>
     </div>
     <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
