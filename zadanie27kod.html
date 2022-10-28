@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie27</title>
+    <script>
+        function okno_zamknij_maszk()
+            {
+            window.close()
+            }
+var pudelko = {
+cena: '799.99zl',
+zawartosc: 'buty',
+zakup: '19 czerwca',
+pudelko_wyswietl_maszk: function ()
+{
+document.write(this.cena + ' ' + this.zawartosc)
+}
+}
+pudelko.pudelko_wyswietl_mas();
+pudelko.odbiorca='Krzysztof Maszk';
+pudelko.pudelko_pokaz_maszk=function() {alert('Odbiorca: ' + this.odbiorca)}
+pudelko.pudelko_pokaz_maszk();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+    <p><input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/></p>
+</body>
+</html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
