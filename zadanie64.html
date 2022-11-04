@@ -1,0 +1,27 @@
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script language="JavaScript">
+function okno_zamknij_maszk()	
+            {
+            window.close()
+            }
+ 
+function test() {
+var liczba = document.forms['formularz'].liczba.value;
+if (liczba % 2 == 0)
+alert("Podana liczba jest parzysta");
+else
+alert("Podana liczba nie jest parzysta");
+}
+</script>
+ 
+<form id="formularz" action="">
+<br /><font style="color: black;"><b>Podaj liczbę: <input type="text" name="liczba" />
+<br /><button onclick="test()">Sprawdź</button><br>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/><br>
+</body>
+</html>

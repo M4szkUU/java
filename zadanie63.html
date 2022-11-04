@@ -1,0 +1,32 @@
+<html>
+<body>
+ 
+<script type="text/javascript">
+ function okno_zamknij_maszk()	
+            {
+            window.close()
+            }
+ 
+ document.write("<p style=\"font-size: 40.px; color: green;\"><br>Menu <br></p>");
+ document.write("<p style=\"font-size: 40.px; color: red;\"><br>1 - czerowyny <br></p>");
+ document.write("<p style=\"font-size: 40.px; color: blue;\"><br>2 - niebieski <br></p>");
+ 
+function test() {
+var liczba = document.forms['formularz'].liczba.value;
+ if(liczba==1){
+ document.write ("<p style=\"font-size: 40.px; color: red;\"><br>Wybrałeś kolor czerowny<br></p>");
+ }
+ 
+ if(liczba==2){
+  document.write ("<p style=\"font-size: 40.px; color: blue;\"><br>Wybrałeś kolor niebieski<br></p>");
+ }
+ }
+</script>
+ 
+<form id="formularz" action="">
+<br />Podaj liczbę: <input type="text" name="liczba" />
+<br /><button onclick="test()">Sprawdź</button>
+</form>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
