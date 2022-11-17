@@ -25,34 +25,34 @@ x1=(-b-Math.sqrt(delta))/2*a;
 x2=(-b+Math.sqrt(delta))/2*a;
 p=-b/2*a;
 q=-delta/4*a;
-document.write("Postać ogólna:y="+a+"x^2+"+b+"x+"+c+"<br>");
-document.write("Postać iloczynowa:y="+a+"(x");
+document.write("Postać ogólna:y="+a.toFixed(2)+"x^2+"+b.toFixed(2)+"x+"+c.toFixed(2)+"<br>");
+document.write("Postać iloczynowa:y="+a.toFixed(2)+"(x");
 if(x1<0){
 x1=x1-x1-x1;
-document.write("+"+x1+")");
+document.write("+"+x1.toFixed(2)+")");
 }else if(x1>0){
-    document.write("+"+x1+")");
+    document.write("+"+x1.toFixed(2)+")");
 }
 
 if(x2<0){
     x2=x2-x2-x2;
-    document.write("(x+"+x2+")<br>");
+    document.write("(x+"+x2.toFixed(2)+")<br>");
 }else if(x2>0){
-    document.write("(x-"+x2+")<br>");
+    document.write("(x-"+x2.toFixed(2)+")<br>");
 }
 
-document.write("Postać kanoniczna:y="+a+"(x");
+document.write("Postać kanoniczna:y="+a.toFixed(2)+"(x");
 if(p<0){
 p=p-p-p;
-document.write("+"+p+")^2");
+document.write("+"+p.toFixed(2)+")^2");
 }else{
-    document.write(p+")^2");
+    document.write(p.toFixed(2)+")^2");
 }
 if(q>0)
 {
-    document.write("+"+q+"<br>");
+    document.write("+"+q.toFixed(2)+"<br>");
 }else{
-    document.write(q+"<br>");
+    document.write(q.toFixed(2)+"<br>");
 }
 </script>
 </body>
