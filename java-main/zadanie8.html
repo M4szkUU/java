@@ -1,0 +1,30 @@
+<html>
+<body>
+<div style="color:green;font-size:49px;">
+<script language="JavaScript">
+var dzien1=prompt("Dzień1=","");
+var dzien2=prompt("Dzień2=","");
+var wynik;
+var a=parseFloat(dzien1);
+var b=parseFloat(dzien2);
+if (a>b) {
+    wynik=(a*86400)-(b*86400);
+}
+if (a<b) {
+    wynik=(b*86400)-(a*86400);
+}
+if (a==b) {
+    wynik=0;
+}
+function okno_zamknij_maszk()
+{
+window.close()
+}
+document.write("Dzień1=  "+a+" <br>");
+document.write("Dzień2=  "+b+" <br>");
+document.write("Ilość sekund= " +wynik+"sekund <br>");
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <html>
+            <body>
+            <div style="color:green;font-size:49px;">
+            <script language="JavaScript">
+            var m_mas=prompt("Podaj m=","");
+            var m1_mas;
+            var m2_mas;
+            var a=parseFloat(m_mas);
+            var b=parseFloat(m1_mas);
+            b=a*2;	
+            function okno_zamknij_maszk()
+            {
+            window.close()
+            }
+            document.write("1/"+a+"="+"1/"+b+"+"+"1/"+b+" <br>");
+         
+            </script>
+            </div>
+            <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+            </body>
+            </html>           
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

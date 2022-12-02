@@ -1,0 +1,31 @@
+<html>
+<body>
+ 
+<script type="text/javascript">
+ function okno_zamknij_maszk()	
+            {
+            window.close()
+            }
+	document.write ("<p style=\"font-size: 20px; color: green;\"><br>Podaj rok od kiedy działa Javasript<br></p>");	
+ 
+function test() {
+var rok_mas = document.forms['formularz'].liczba.value;
+ if(rok_mas==1995){
+ document.write ("<p style=\"font-size: 40px; color: blue;\"><br>Brawo znasz rok od kiedy działa Javasript<br></p>");
+ document.write ("<p style=\"font-size: 40px; color: blue;\"><br>Wczytany rok=" + rok + "<br></p>");
+ }
+ 
+ else {
+  document.write ("<p style=\"font-size: 70px; color: red;\"><br>Źle musisz jeszcze poczytać<br></p>");
+  document.write ("<p style=\"font-size: 70px; color: red;\"><br>wczytany rok=" + rok + "<br></p>");
+ }
+ }
+</script>
+ 
+<form id="formularz" action="">
+<br />Podaj liczbę: <input type="text" name="liczba" />
+<br /><button onclick="test()">Sprawdź</button>
+</form>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

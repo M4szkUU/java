@@ -1,0 +1,41 @@
+<html>
+<body>
+<div style="color:blue;font-size:49px;">
+ <script language="JavaScript">
+var b_mas=prompt("b=","");
+var b_mas=parseFloat(b_mas);
+
+var c_mas=prompt("c=","");
+var c_mas=parseFloat(c_mas);
+
+var pitagoras;
+var a_mas;
+
+pitagoras=Math.sqrt(c_mas,2)-Math.sqrt(b_mas,2);
+a_mas=Math.sqrt(pitagoras,2);
+
+var sin_α;
+var sin_α=parseFloat(sin_α);
+sin_α=a_mas/c_mas;
+
+var cos_α;
+var cos_α=parseFloat(cos_α);
+cos_α=b_mas/c_mas;
+
+var tgα;
+var tgα=parseFloat(tgα);
+tgα=a_mas/b_mas;
+
+var ctgα;
+var ctgα=parseFloat(ctgα);
+ctgα=b_mas/a_mas;
+document.write("sin α="+sin_α.toFixed(2)+"<br>cos α="+cos_α.toFixed(2)+"<br>tgα="+tgα.toFixed(2)+"<br>ctgα="+ctgα.toFixed(2)+"<br>");
+function okno_zamknij_maszk()
+            {
+            window.close()
+            }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

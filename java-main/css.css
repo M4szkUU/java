@@ -1,0 +1,36 @@
+:root {
+    --clr-neon: rgba(11, 195, 15, 0.502);
+    
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: grid;
+    background: var(--clr-bg);
+    font-family: "Balsamiq Sans", cursive;
+    color: var(--clr-neon);
+    
+  }
+  .neon-button{
+    font-size: 0.7rem;
+    background: rgb(17, 78, 3);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: currentColor 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow: 
+    0 0 0.1em hsl(0, 0%, 100%), 0 0 0.2em currentColor;
+
+    box-shadow: inset 0 0 0.2em 0 var(--clr-neon), 
+    0 0 0.1em 0 var(--clr-neon) ;
+  }

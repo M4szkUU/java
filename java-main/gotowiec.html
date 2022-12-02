@@ -1,0 +1,59 @@
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script language="JavaScript">
+function okno_zamknij_maszk()	
+            {
+            window.close()
+            }
+ 
+var A_mas = prompt("Podaj liczbe A:","");
+var B_mas = prompt("Podaj liczbe B:","");
+var C_mas = prompt("Podaj liczbe C:","");
+var a = parseFloat(A_mas);
+var b = parseFloat(B_mas);
+var c = parseFloat(C_mas);
+var delta;
+var x1;
+var x2;
+var p;
+var q;
+delta=Math.pow(b,2)-4*a*c;
+x1=(-b-Math.sqrt(delta))/2*a;
+x2=(-b+Math.sqrt(delta))/2*a;
+p=-b/2*a;
+q=-delta/4*a;
+document.write("Postać ogólna:y="+a.toFixed(2)+"x^2+"+b.toFixed(2)+"x+"+c.toFixed(2)+"<br>");
+document.write("Postać iloczynowa:y="+a.toFixed(2)+"(x");
+if(x1<0){
+x1=x1-x1-x1;
+document.write("+"+x1.toFixed(2)+")");
+}else if(x1>0){
+    document.write("+"+x1.toFixed(2)+")");
+}
+
+if(x2<0){
+    x2=x2-x2-x2;
+    document.write("(x+"+x2.toFixed(2)+")<br>");
+}else if(x2>0){
+    document.write("(x-"+x2.toFixed(2)+")<br>");
+}
+
+document.write("Postać kanoniczna:y="+a.toFixed(2)+"(x");
+if(p<0){
+p=p-p-p;
+document.write("+"+p.toFixed(2)+")^2");
+}else{
+    document.write(p.toFixed(2)+")^2");
+}
+if(q>0)
+{
+    document.write("+"+q.toFixed(2)+"<br>");
+}else{
+    document.write(q.toFixed(2)+"<br>");
+}
+</script>
+</body>
+</html>

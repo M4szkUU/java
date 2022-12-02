@@ -1,0 +1,9 @@
+zadanie.1
+punkt kratowy to taki punkt w uk³adzie x,y który ma ca³kowie wspó³rzêdne (3,8)
+dowolny msposobem odpowiedzieæ na pytanie ile punktów kratowych jest w kole o promieniu o 1 (brzeg te¿ liczymy)
+odp:5
+zadanie.2
+wczytaæ zmien¹ R_mas i napisac program który wyœwietli wszytkie punkty kratowe z kwadratu o promieniu 2R gdzie srodek kwadratu jest w ounkcie (0,0)
+Punkty wyœwietl wierszami u¿yj pêtli w pêtli 
+
+

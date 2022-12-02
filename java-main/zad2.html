@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+var x=prompt("podaj liczbę R=","");
+var R_mas=parseFloat(x);
+var licznik=0;
+var d_mas;
+for ( var i=-Math.round(R_mas)-1; i<=Math.round(R_mas)+1; i++)
+ {
+   for ( var k=-Math.round(R_mas)-1; k<=Math.round(R_mas)+1; k++)
+     {
+	 d_mas=Math.sqrt(i*i+k*k);
+	 if(d_mas<=R_mas){
+	 licznik++; }
+     } 
+ }
+ document.write("N:"+licznik+"<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

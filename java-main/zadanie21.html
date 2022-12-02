@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>
+Obliczanie Drabiny i Alfy
+</title>
+<script language="JavaScript">
+function D_mas(d_mas,x_mas)
+{
+d_mas=parseFloat(d_mas)
+x_mas=parseFloat(x_mas)
+Drabina_wynik_mas=Math.sqrt((d_mas*d_mas)+(x_mas*x_mas))
+document.getElementsByName('Drabina_mas')[0].value=Drabina_wynik_mas.toFixed(2); /* na dokument */
+alert("Drabina="+Drabina_wynik_mas.toFixed(2)); /*do okna Alert */
+pokaz1.innerHTML="Drabina="+Drabina_wynik_mas.toFixed(2); /* do tabeli */
+}
+function A_mas(d_mas,x_mas)
+{
+d_mas=parseFloat(d_mas)
+x_mas=parseFloat(x_mas)
+nach1_mas=Math.atan2(d_mas,x_mas)
+Alfa_wynik_mas=180*nach1_mas/Math.PI
+document.getElementsByName('Alfa_mas')[0].value=Alfa_wynik_mas.toFixed(2);
+alert("Alfa="+Alfa_wynik_mas.toFixed(2));
+pokaz2.innerHTML="Alfa="+Alfa_wynik_mas.toFixed(2);
+}
+function okno_zamknij_maszk()
+            {
+            window.close()
+            }
+</script>
+</head>
+<body>
+Obliczenie odległości od drabiny i kąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="D_mas(this.d_mas.value,this.x_mas.value); A_mas(this.d_mas.value,this.x_mas.value);return false">
+Podaj d<datalist></datalist>=
+<input size="6" name="d_mas">
+Podaj x=
+<input size="6" name="x_mas">
+<br> <br>
+<input TYPE="submit" Value="oblicz_mas" >
+<br> <br>
+Drabina=
+<input size="6" name="Drabina_mas">
+Alfa=
+<input size="6" name="Alfa_mas">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</table>
+</body>
+</html>

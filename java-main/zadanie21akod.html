@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <html>
+    <body>
+    <div style="color:red;font-size:40px;">
+    <script language="JavaScript">
+    var bokb_mas=prompt("Podaj bok B:","");
+	var bokc_mas=prompt("Podaj bok C:","");
+    var boka_mas;
+	var p_mas;
+	var h3_mas;
+	var s_a_mas;
+	var c_a_mas;
+	var t_a_mas;
+	var ct_a_mas;
+	var alfa_mas;
+	var beta_mas;
+    var bokb_mas=parseFloat(bokb_mas);
+    var bokc_mas=parseFloat(bokc_mas);
+	boka_mas=Math.sqrt((bokc_mas*bokc_mas)-(bokb_mas*bokb_mas));	
+	p_mas=(boka_mas*bokb_mas)/2;
+	h3_mas=(boka_mas*bokb_mas)/bokc_mas;
+	alfa_mas=Math.sin(boka_mas/bokc_mas)*180/Math.PI;
+	beta_mas=90-alfa_mas;
+	s_a_mas=boka_mas/bokc_mas;
+	c_a_mas=bokb_mas/bokc_mas;
+	t_a_mas=boka_mas/bokb_mas;
+	ct_a_mas=bokb_mas/boka_mas;
+    function okno_zamknij_maszk()
+    {
+    window.close()
+    }
+    document.write("Bok a="+boka_mas.toFixed(3)+"cm"+"<br>");
+	document.write("Pole="+p_mas.toFixed(3)+"cm^2"+"<br>");
+	document.write("Wysokość h1="+boka_mas.toFixed(3)+"cm"+"<br>");
+	document.write("Wysokość h2="+bokb_mas.toFixed(3)+"cm"+"<br>");
+	document.write("Wysokość h3="+h3_mas.toFixed(3)+"cm"+"<br>");
+	document.write("Kąt alfa="+alfa_mas.toFixed(3)+"º"+"<br>");
+	document.write("Kąt beta="+beta_mas.toFixed(3)+"º"+"<br>");
+	document.write("sin_alfa="+s_a_mas.toFixed(3)+"<br>");
+	document.write("cos_alfa="+c_a_mas.toFixed(3)+"<br>");
+	document.write("tg_alfa="+t_a_mas.toFixed(3)+"<br>");
+	document.write("ctg_alfa="+ct_a_mas.toFixed(3)+"<br>");
+    </script>
+    </div>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+    </body>
+    </html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

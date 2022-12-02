@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+       	 <html>
+            <body>
+            <div style="color:blue; font-size:40px;">
+            <script language="JavaScript">
+            var l1_mas=prompt("Podaj pierwszą liczbę    A=","");
+            var l2_mas=prompt("Podaj drugą liczbę    B=","");
+            var l3_mas;
+            var l4_mas;
+            var l5_mas;
+            var l6_mas;
+            var w_mas;
+            var a=parseFloat(l1_mas);
+            var b=parseFloat(l2_mas);
+            var c=parseFloat(l3_mas);
+            var d=parseFloat(l4_mas);
+	        var e=parseFloat(l5_mas);
+            var f=parseFloat(l6_mas);
+            var g=parseFloat(w_mas);
+            c=a*a*a;
+            d=3*((a*a)*b);
+            e=3*(a*(b*b));
+            f=b*b*b;
+            g=c+d+e+f;
+            function okno_zamknij_maszk()
+            {
+            window.close()
+            }
+            document.write("("+a+" + "+b+")^3="+a+"^3 + 3*(("+a+")^2)*("+b+") + 3*("+a+")*(("+b+")^2) + "+b+"^3 = "+c+" + "+d+" + "+e+" + "+f+" = "+g+" <br>");
+            </script>
+            </div>
+            <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+            </body>
+            </html>
+            
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

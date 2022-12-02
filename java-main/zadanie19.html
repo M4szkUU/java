@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>
+Obliczanie pola i obwou prostokąta
+</title>
+<script language="JavaScript">
+function P_mas(a_mas,b_mas)
+{
+a_bok_mas=parseFloat(a_mas)
+b_bok_mas=parseFloat(b_mas)
+P_wynik_mas=a_bok_mas*b_bok_mas
+document.getElementsByName('pole_mas')[0].value=P_wynik_mas.toFixed(2); /* na dokument */
+alert("Pole="+P_wynik_mas.toFixed(2)+" cm^2"); /*do okna Alert */
+pokaz1.innerHTML="Pole="+P_wynik_mas.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function Obw_mas(a_mas,b_mas)
+{
+a_bok_mas=parseFloat(a_mas)
+b_bok_mas=parseFloat(b_mas)
+19
+Obw_wynik_mas=(2*a_bok_mas)+(2*b_bok_mas)
+document.getElementsByName('obwod_mas')[0].value=Obw_wynik_mas.toFixed(2);
+alert("Obw="+Obw_wynik_mas.toFixed(2)+" cm");
+pokaz2.innerHTML="Obw="+Obw_wynik_mas.toFixed(2)+"cm";
+}
+function okno_zamknij_maszk()
+            {
+            window.close()
+            }
+</script>
+</head>
+<body>
+Obliczenie pola i obwodu
+<br> <br>
+<form name="formularz" action="..." onsubmit="P_mas(this.a_bok_mas.value,this.b_bok_mas.value); Obw_mas(this.a_bok_mas.value,this.b_bok_mas.value);return false">
+Podaj bok a=
+<input size="6" name="a_bok_mas">
+Podaj bok b=
+<input size="6" name="b_bok_mas">
+<br> <br>
+<input TYPE="submit" Value="oblicz_mas" >
+<br> <br>
+Pole=
+<input size="6" name="pole_mas">
+Obw=
+<input size="6" name="obwod_mas">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</table>
+</body>
+</html>

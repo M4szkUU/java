@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <html>
+            <body>
+            <div style="color:green;font-size:49px;">
+            <script language="JavaScript">
+            var dzien1=prompt("Dzień1=","");
+            var g1=prompt("Podaj godznie 1-raz=","");
+            var dzien2=prompt("Dzień2=","");
+            var g2=prompt("Podaj godznie 2-raz=","");
+            var wynik;
+            var a=parseFloat(dzien1);
+            var b=parseFloat(dzien2);
+            var c=parseFloat(g1);
+            var d=parseFloat(g2);
+            if (a>b) {
+                wynik=((a*86400)-(c*3600))-((b*86400)-(d*3600));
+            }
+            if (a<b) {
+                wynik=((b*86400)-(d*3600))-((a*86400)-(c*3600));
+            }
+            if (a==b||c==d) {
+                wynik=0;
+            }
+            function okno_zamknij_maszk()
+            {
+            window.close()
+            }
+            document.write("D1=  "+a+" <br>");
+            document.write("G1=  "+c+" <br>");
+            document.write("D2=  "+b+" <br>");
+            document.write("G2=  "+d+" <br>");
+            document.write("Ilość sekund= " +wynik+"sekund <br>");
+            </script>
+            </div>
+            <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+            </body>
+            </html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

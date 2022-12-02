@@ -1,0 +1,16 @@
+Zadanie 21a 
+Napisaæ program, który po wczytaniu przeciw prostok¹tnej trójk¹ta oraz dowlonego boku obliczy:
+
+a) trzeci bok  
+b) pole
+c) wszytkie wysokoœæi
+d) wszytkie fukcije trygometryczne k¹ta alfa 
+e) oblizcy k¹ty ostre
+u¿yj zmiennych trzech liter nazwiska, wydruki do trzeh miejsc po przecinku u¿yj modu³u Math
+do obliczenia k¹ta u¿yj funkcji asin
+Do przeliczenia radianów na stopnie u¿yj 180/PI
+alfa=Math.sin(a/c)*180/Math.PI;
+beta=90-alfa;
+
+
+Zadanie14
