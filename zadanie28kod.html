@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <html>
+<head>
+<script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+function pudelko(cena_m,zawartosc_m,zakup_m)//początek konstruktora
+{
+this.cena=cena_m;
+this.zawartosc=zawartosc_m;
+this.zakup=zakup_m;
+}//koniec konstruktora
+pudelko.prototype.wypisz = function () //definicja metody
+{
+alert(this.cena + ' ' + this.zawartosc+ ' ' + this.zakup);
+};
+var paczka1 = new pudelko("1349.99zl", "Komputery", "19 czerwca"); // nowy obiekt osoba1
+var paczka2 = new pudelko('559.99zl', 'Buty', '18 maja');
+var paczka3 = new pudelko('349.99zl', 'Ubrania', '21 marca');
+paczka1.wypisz();
+paczka2.wypisz();
+paczka3.wypisz();
+pudelko.prototype.pudelko_pokaz_maszk=function() {alert('Odbiorca: ' + this.odbiorca)}
+paczka1.odbiorca='Krzysztof Maszk';
+paczka2.odbiorca='Jan Meller';
+paczka3.odbiorca='Oliwier Wąsik';
+paczka1.pudelko_pokaz_maszk();
+paczka2.pudelko_pokaz_maszk();
+paczka3.pudelko_pokaz_maszk();
+document.write("dostęp do właściwości"+"<br>");
+document.write("Pudelko jeden"+" "+paczka1.cena+" "+paczka1.zawartosc+" "+paczka1.zakup+" "+paczka1.odbiorca+"<br>");
+document.write("Pudelko dwa"+" "+paczka2.cena+" "+paczka2.zawartosc+" "+paczka2.zakup+" "+paczka2.odbiorca+"<br>");
+document.write("Pudelko trzy"+" "+paczka3.cena+" "+paczka3.zawartosc+" "+paczka3.zakup+" "+paczka3.odbiorca+"<br>");
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

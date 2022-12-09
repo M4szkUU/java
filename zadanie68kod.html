@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+  var a  = prompt("Wpisz liczbę");
+  var i = 0;
+ a=(a%2==0);
+ do{
+ if (a){
+ document.write ("<div style=\"font-size: 41.px; color: blue;\"><br>Alan<br></div>");
+ }
+else 
+  document.write ("<div style=\"font-size: 41.px; color: green;\"><br>Maszk<br></div>");
+  i++;
+ }while(i<=11);
+ </script>
+</div>
+</body>
+</html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

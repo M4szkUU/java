@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <html>
+<body>
+ 
+<script type="text/javascript">
+ function okno_zamknij_maszk()	
+            {
+            window.close()
+            }
+ 
+ document.write("<p style=\"font-size: 40.px; color: green;\"><br>Menu <br></p>");
+ document.write("<p style=\"font-size: 40.px; color: red;\"><br>1 - czerowyny <br></p>");
+ document.write("<p style=\"font-size: 40.px; color: blue;\"><br>2 - niebieski <br></p>");
+ 
+function test() {
+var liczba = document.forms['formularz'].liczba.value;
+ if(liczba==1){
+ document.write ("<p style=\"font-size: 40.px; color: red;\"><br>Wybrałeś kolor czerowny<br></p>");
+ }
+ 
+ if(liczba==2){
+  document.write ("<p style=\"font-size: 40.px; color: blue;\"><br>Wybrałeś kolor niebieski<br></p>");
+ }
+ }
+</script>
+ 
+<form id="formularz" action="">
+<br />Podaj liczbę: <input type="text" name="liczba" />
+<br /><button onclick="test()">Sprawdź</button>
+</form>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
