@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+  function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+		
+var i_mas=prompt("Podaj imię =","");
+var n_mas=prompt("Podaj nazwisko =","");
+var d = (i_mas.length%4)+5;
+var e = (n_mas.length%6)+20;
+var c_mas = "*";
+for ( var i=1; i<=d; i++)
+{
+document.write("*");
+}
+document.write("<br>");
+for ( var i=1; i<=(d-2); i++)
+{
+c_mas=c_mas+"&nbsp&nbsp";
+}
+for ( var i=1; i<=e; i++)
+{
+document.write(c_mas+"*<br>");
+}
+for ( var i=1; i<=d; i++)
+{
+document.write("*");
+}
+</script>
+</head>
+<body>
+ <p><input type="maston" value="zamknij okno" onclick="okno_zamknij_maszk()"/></p>
+</body>
+</html>

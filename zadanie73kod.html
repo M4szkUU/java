@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+  function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+		
+var i_mas=prompt("Podaj imię =","");
+var n_mas=prompt("Podaj nazwisko =","");
+var d = (i_mas.length%4)+5;
+var e = (n_mas.length%6)+20;
+var c_mas = "*";
+for ( var i=1; i<=d; i++)
+{
+document.write("*");
+}
+document.write("<br>");
+for ( var i=1; i<=(d-2); i++)
+{
+c_mas=c_mas+"&nbsp&nbsp";
+}
+for ( var i=1; i<=e; i++)
+{
+document.write(c_mas+"*<br>");
+}
+for ( var i=1; i<=d; i++)
+{
+document.write("*");
+}
+</script>
+</head>
+<body>
+ <input type="maston" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

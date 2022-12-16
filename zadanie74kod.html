@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+       <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+var l1_t_mas=prompt("Podaj liczbę 1 =","");
+var a=parseFloat(l1_t_mas);
+var l2_t_mas=prompt("Podaj liczbę 2 =","");
+var b=parseFloat(l2_t_mas);
+var po=prompt("Podaj początkową wartość","");
+var pocz_mas=parseFloat(po);
+var tekst_mas=prompt("Podaj tekst","");
+var i = pocz_mas;
+
+if ((a>60) || (a<20) || (b>60) || (b<60)){
+document.write("Nie ma takich liczb w zbiorze");
+}
+else if (a>b)
+{
+for ( var j=1; j<=pocz_mas; j++)
+{
+if (i>0)
+{
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_mas+"<br></p>");
+i = i - 5;
+}
+}
+}
+else if (b>a)
+{
+for ( var j=1; j<=pocz_mas; j++)
+{
+if (i<0)
+{
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_mas+"<br></p>");
+i = i + 5;
+}
+}
+}
+</script>
+</head>
+<body>
+<input type="maston" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html> 
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
