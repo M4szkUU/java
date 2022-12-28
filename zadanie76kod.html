@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadania</title>
+    <script type="text/javascript">
+        function okno_zamknij_maszk()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea name="nazwa" cols="115" rows="35" readonly>
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij_maszk()
+ {
+ window.close()
+ }
+
+
+for ( var i=4; i<=19; i++)
+{
+var w = Math.sqrt(i);
+var y = Math.sqrt(Math.sqrt(i));
+document.write("i="+i+"&nbsp pierw_2("+i+")="+w.toFixed(2)+"&nbsp pierw_4("+i+")="+y.toFixed(2)+"<br>");
+}
+</script>
+</head>
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body>
+</html>

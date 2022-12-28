@@ -8,17 +8,13 @@
  {
  window.close()
  }
-var w = i * i + i + 41;
 
 
-for ( var i=0; i<=39; i++)
+for ( var i=4; i<=19; i++)
 {
-if (i%5==0)
-{
-document.write("--------------<br>");
-}
-var w = i * i + i + 41;
-document.write("i="+i+"&nbsp w("+i+")="+w+"<br>");
+var w = Math.sqrt(i);
+var y = Math.sqrt(Math.sqrt(i));
+document.write("i="+i+"&nbsp pierw_2("+i+")="+w.toFixed(2)+"&nbsp pierw_4("+i+")="+y.toFixed(2)+"<br>");
 }
 </script>
 </head>
