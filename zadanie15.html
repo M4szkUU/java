@@ -1,0 +1,33 @@
+<html> 
+<head> 
+<title>
+zadanie 15
+</title>
+</head>
+<body style="color:rgb(33, 33, 156);font-size:48px;background-color:rgb(170, 163, 163);">
+ <script language="JavaScript">
+  function okno_zamknij_maszk()
+        {
+        window.close()
+        }   
+var x1_mas=prompt("podaj x1=","");
+var x2_mas=prompt("podaj x2=","");
+var y1;
+var y2;
+var y3;
+var x1_s;
+x1=parseFloat(x1_mas);
+x2=parseFloat(x2_mas);
+y1=3 * Math.pow(x1,3 / 4);
+y2=2 * Math.cos(x1) + 3 * Math.sin(x1);
+y3=Math.cbrt(Math.pow(x1, 5) + 2 * Math.pow(x2, 4) * Math.abs(x1 - x2));
+x1_s=(x1*Math.PI)/180;
+var a = y1.toFixed(2);
+var b = y2.toFixed(2);
+var c = y3.toFixed(2);
+var d = x1_s.toFixed(2);
+document.write("x1 = "+x1+" x2 = "+x2+"<br> x1 = "+x1+" x1 = "+d+"<br> y1 = "+a+"<br> y2 = "+b+"<br> y3 = "+c+"<br>");
+ </script>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_maszk()"/>
+</body> 
+</html>
